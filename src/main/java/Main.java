@@ -4,7 +4,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Race race = new Race();
 
-        System.out.println("Старт гонки 24 часа Ле-Мана");
+        System.out.println("Старт гонки 24 часа Ле-Мана!");
 
         int numCars = 3;
         for (int i = 1; i <= numCars; i++) {
