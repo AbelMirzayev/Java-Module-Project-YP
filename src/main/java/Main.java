@@ -4,7 +4,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Race race = new Race();
 
-        System.out.println("Старт гонки 24 часа Ле-Мана");
+        System.out.println("Старт гонки 24 часа Ле-Мана!");
 
         int numCars = 3;
         for (int i = 1; i <= numCars; i++) {
@@ -14,12 +14,12 @@ public class Main {
 
             int carSpeed = 0;
             while (true) {
-                System.out.print("Введите скорость (от 1 до 250 км/ч): ");
+                System.out.print("Введите скорость (от 0 до 250 км/ч): ");
 
                 if (scanner.hasNextInt()) {
                     int inputSpeed = scanner.nextInt();
 
-                    if (inputSpeed > 0 && inputSpeed <= 250) {
+                    if (inputSpeed >= 0 && inputSpeed <= 250) {
                         carSpeed = inputSpeed;
                         break;
                     } else {
